@@ -3,11 +3,25 @@ import * as Ariakit from '@ariakit/react';
 
 // Internal Imports
 import './CardDisplay-style.css';
+import Card from './Card.jsx';
 
-function CardDisplay() {
+function CardDisplay({ contentArray = [] }) {
+
     return (
-        <div className="wrapper">
-        Hi there! I am a CardDisplay component 😊
+        <div className="card-display-wrapper">
+            <ul className="cards-wrapper">
+                { contentArray.map(function(cardContent) {
+                    return (
+                        <li key={ cardContent.id }>
+                            <Card
+                                title={ cardContent.title }
+                                imgPath={ cardContent.imgPath }
+                                caption={ cardContent.caption }
+                            />
+                        </li>
+                    )
+                }) }
+            </ul>
         </div>
     );
   }

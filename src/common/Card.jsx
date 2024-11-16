@@ -1,14 +1,16 @@
 // Library Imports
-import * as Ariakit from '@ariakit/react';
+import { Button } from "@ariakit/react";
 
 // Internal Imports
 import './Card-style.css';
 
-function Card() {
+function Card(props) {
     return (
-        <div className="wrapper">
-        Hi there! I am a Card component 😊
-        </div>
+        <Button className="card-wrapper" onClick={ () => {alert("Card Clicked")} }>
+            <h3>{ props.title }</h3>
+            <img src={ props.imgPath } alt={ props.imgPath }></img>
+            <p>{ props.caption }</p>
+        </Button>
     );
   }
   

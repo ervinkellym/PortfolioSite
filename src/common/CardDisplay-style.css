@@ -1,0 +1,18 @@
+.cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card-display-wrapper {
+    border-radius: 0.5rem;
+    background-color: snow;
+    padding: 0.5rem;
+}

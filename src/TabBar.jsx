@@ -13,9 +13,9 @@ function TabBar() {
         <div className="wrapper">
         <Ariakit.TabProvider defaultSelectedId={ defaultSelectedId }>
             <Ariakit.TabList className="tab-list" aria-label="Navigation Tabs">
-                <Ariakit.Tab className="tab">Projects</Ariakit.Tab>
-                <Ariakit.Tab className="tab" id={ defaultSelectedId }>Home/About</Ariakit.Tab>
-                <Ariakit.Tab className="tab">Contact</Ariakit.Tab>
+                <Ariakit.Tab className="tab">projects</Ariakit.Tab>
+                <Ariakit.Tab className={ "tab home-tab" } id={ defaultSelectedId }>kelly mills</Ariakit.Tab>
+                <Ariakit.Tab className="tab">contact</Ariakit.Tab>
             </Ariakit.TabList>
             <div className="panels">
             <Ariakit.TabPanel>
