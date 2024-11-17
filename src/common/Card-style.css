@@ -2,26 +2,36 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 3rem;
     background-color: snow;
     padding: 0.5rem;
     min-width: 20em;
     box-shadow:
-        0 1px 3px 0 rgb(0 0 0 / 0.2),
-        0 1px 2px -1px rgb(0 0 0 / 0.2);
+        0 0 15px 0 pink,
+        0 1px 3px 0 palevioletred;
 
     align-items: center;
+    border-color: gainsboro;
+    border-width: 0.1rem;
+}
+
+.hop-up-on-hover {
+    position: relative;
+    top: 0;
+    transition: top ease 0.2s;
+}
+
+.hop-up-on-hover:hover {
+    top: -7px;
 }
 
 img {
-    max-width: 90vw;
+    width: 95%;
 }
 
-/* Sizing for Desktop: */
-@media only screen and (min-width: 768px) {
-
-    img {
-        max-width: 40vw;
-    }
-  }
+.move-up-slightly {
+    position: relative;
+    top: 0px;
+    transition: all 0.3s ease-out;
+}
   

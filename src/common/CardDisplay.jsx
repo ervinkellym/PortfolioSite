@@ -8,21 +8,19 @@ import Card from './Card.jsx';
 function CardDisplay({ contentArray = [] }) {
 
     return (
-        <div className="card-display-wrapper">
-            <ul className="cards-wrapper">
-                { contentArray.map(function(cardContent) {
-                    return (
-                        <li key={ cardContent.id }>
-                            <Card
-                                title={ cardContent.title }
-                                imgPath={ cardContent.imgPath }
-                                caption={ cardContent.caption }
-                            />
-                        </li>
-                    )
-                }) }
-            </ul>
-        </div>
+        <ul className="card-ul">
+            { contentArray.map(function(cardContent) {
+                return (
+                    <li className="card-li" key={ cardContent.id }>
+                        <Card
+                            title={ cardContent.title }
+                            imgPath={ cardContent.imgPath }
+                            caption={ cardContent.caption }
+                        />
+                    </li>
+                )
+            }) }
+        </ul>
     );
   }
   
