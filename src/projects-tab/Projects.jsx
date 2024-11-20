@@ -1,3 +1,6 @@
+// React Imports
+import { useState } from 'react';
+
 // Library Imports
 import * as Ariakit from '@ariakit/react';
 
@@ -70,10 +73,36 @@ const projectData = [
 ]
 
 function Projects() {
+    const [open, setOpen] = useState(false);
+    const [dialogHeader, setDialogHeader] = useState('Default Header');
+    const [dialogContent, setDialogContent] = useState('Default content - if you\'re reading this then something went wrong with the dialog!');
+
+    function onCardClick(projectID) {
+        setDialogHeader(projectData[projectID].title);
+        setOpen(true);
+    }
+
     return (
         <div className="tab-wrapper">
             <p>Hi there! I am the Projects tab 😊</p>
-            <CardDisplay contentArray={ projectData }/>
+            <CardDisplay contentArray={ projectData } clickHandler={ onCardClick }/>
+            <Ariakit.Dialog
+                backdrop={false}
+                open={open}
+                onClose={() => setOpen(false)}
+                className="dialog"
+                render={(props) => (
+                    <div className="backdrop" hidden={!open}>
+                        <div {...props} />
+                    </div>
+                )}
+            >
+                <div className="header">
+                    <Ariakit.DialogHeading className="heading">{ dialogHeader }</Ariakit.DialogHeading>
+                    <Ariakit.DialogDismiss className="button secondary">Close</Ariakit.DialogDismiss>
+                </div>
+                <p>{ dialogContent }</p>
+            </Ariakit.Dialog>
         </div>
     );
   }

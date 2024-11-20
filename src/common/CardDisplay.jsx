@@ -5,7 +5,11 @@ import * as Ariakit from '@ariakit/react';
 import './CardDisplay-style.css';
 import Card from './Card.jsx';
 
-function CardDisplay({ contentArray = [] }) {
+function CardDisplay(props) {
+    const { 
+        contentArray = [],
+        clickHandler = () => { alert("CardDisplay click handler fired") },
+    } = props;
 
     return (
         <ul className="card-ul">
@@ -13,9 +17,11 @@ function CardDisplay({ contentArray = [] }) {
                 return (
                     <li className="card-li" key={ cardContent.id }>
                         <Card
+                            id={ cardContent.id }
                             title={ cardContent.title }
                             imgPath={ cardContent.imgPath }
                             caption={ cardContent.caption }
+                            clickHandler={ clickHandler }
                         />
                     </li>
                 )
