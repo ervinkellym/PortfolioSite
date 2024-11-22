@@ -7,11 +7,11 @@
     padding: 0.5rem;
     min-width: 20em;
     box-shadow:
-        0 0 15px 0 pink,
-        0 1px 3px 0 palevioletred;
+        0 0 15px 0 #EDC4CF,
+        0 1px 3px 0 #B0697F;
 
     align-items: center;
-    border-color: gainsboro;
+    border-color: #EDC4CF;
     border-width: 0.1rem;
 }
 

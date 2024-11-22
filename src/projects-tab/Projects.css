@@ -26,11 +26,12 @@ img {
     padding: 1rem 2rem;
     border-radius: 5rem;
     background-color: white;
-    border-color: pink;
+    border-color: #B0697F;
     border-width: 1rem;
     box-shadow:
-        0 0 15px 0 pink;
-    color: darkslategray;
+        0 0 15px 0 #EDC4CF,
+        0 1px 3px 0 #B0697F;
+    color: #2e2d2d;
 }
 
 .keyboard-active a:focus {
@@ -44,7 +45,7 @@ p {
 }
 
 details {
-    background: gainsboro;
+    background: #EDC4CF;
     padding: 10px;
     cursor: pointer;
 }
