@@ -19,7 +19,7 @@ function CardDisplay(props) {
                         <Card
                             id={ cardContent.id }
                             title={ cardContent.title }
-                            imgPath={ cardContent.imgPath }
+                            imgPath={ cardContent.images[0] }
                             caption={ cardContent.caption }
                             clickHandler={ clickHandler }
                         />

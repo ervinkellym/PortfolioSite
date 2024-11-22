@@ -19,7 +19,7 @@
   border-radius: 5rem;
   background-color: snow;
   padding: 11rem;
-  color: black;
+  color:  #2E2D2D;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --inset: 0.75rem;
 
@@ -45,18 +45,39 @@
   }
 }
 
-/* TODO: Dark Mode */
-/* .dialog:where(.dark, .dark *) {
-  border-width: 1px;
-  border-style: solid;
-  border-color: hsl(204 4% 24%);
-  background-color: hsl(204 4% 16%);
-  color: white;
-} */
-
 .heading {
   margin: 0px;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 110%;
+  background-color: palevioletred;
+  color: snow;
+  text-align: center;
+  align-self: center;
+  padding: 1rem;
+}
+
+/* Animations */
+
+.hop-up-on-hover {
+  position: relative;
+  top: 0;
+  transition: top ease 0.2s;
+}
+
+.hop-up-on-hover:hover {
+  top: -7px;
 }

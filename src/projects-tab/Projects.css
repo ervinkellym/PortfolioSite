@@ -1,0 +1,50 @@
+.image-rail {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+img {
+    max-width: 40vw;
+}
+
+/* Sizing for Desktop: */
+@media only screen and (min-width: 768px) {
+    img {
+        max-width: 30vw;
+    }
+}
+
+.link-rail {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.link {
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    background-color: white;
+    border-color: pink;
+    border-width: 1rem;
+    box-shadow:
+        0 0 15px 0 pink;
+    color: darkslategray;
+}
+
+.keyboard-active a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -1px;
+}
+
+p {
+    align-self: center;
+}
+
+details {
+    background: gainsboro;
+    padding: 10px;
+    cursor: pointer;
+}

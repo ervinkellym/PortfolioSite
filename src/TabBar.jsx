@@ -29,6 +29,7 @@ function TabBar() {
             </Ariakit.TabPanel>
             </div>
         </Ariakit.TabProvider>
+        <footer className="footer">Kelly Mills, 2024</footer>
         </div>
     );
   }

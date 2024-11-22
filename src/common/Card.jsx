@@ -13,7 +13,7 @@ function Card(props) {
     return (
         <Button className="card-wrapper hop-up-on-hover" onClick={ () => { clickHandler(id) } }>
             <h3>{ props.title }</h3>
-            <img src={ props.imgPath } alt={ props.imgPath }></img>
+            <img src={ props.imgPath.src } alt={ props.imgPath.alt }></img>
             <p>{ props.caption }</p>
         </Button>
     );

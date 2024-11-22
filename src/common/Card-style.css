@@ -15,15 +15,7 @@
     border-width: 0.1rem;
 }
 
-.hop-up-on-hover {
-    position: relative;
-    top: 0;
-    transition: top ease 0.2s;
-}
 
-.hop-up-on-hover:hover {
-    top: -7px;
-}
 
 img {
     width: 95%;
