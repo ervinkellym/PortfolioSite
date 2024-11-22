@@ -103,8 +103,8 @@ const projectData = [
         ],
         'links': [
             {
-                'text': 'TODO: Host (Project Site)',
-                'address': 'https://ervinkellym.github.io/',
+                'text': 'Project Site',
+                'address': 'https://ervinkellym.github.io/PortfolioSite/',
             },
             {
                 'text': 'Code Repository',
