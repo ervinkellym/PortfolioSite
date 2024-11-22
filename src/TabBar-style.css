@@ -27,7 +27,7 @@
 .tab-list {
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
   
 .tab {
@@ -36,11 +36,10 @@
     justify-content: center;
     gap: 0.5rem;
     white-space: nowrap;
-    border-radius: 5rem;
+    border-radius: 50rem;
     border-style: none;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-size: 1rem;
     line-height: 1.5rem;
     text-decoration-line: none;
 
@@ -48,16 +47,12 @@
     background-color: snow;
     color: #2e2d2d;
     font-family: "Quicksand", serif;
-    font-weight: bolder;
+    font-size: 1rem;
     font-style: normal;
 }
   
 .tab:hover {
     background-color: rgb(0 0 0 / 20%);
-}
-  
-.tab[aria-disabled="true"] {
-    opacity: 0.5;
 }
   
 .tab[aria-selected="true"] {
@@ -91,6 +86,13 @@
   font-family: "Pacifico", cursive;
   font-weight: 400;
   font-style: normal;
+  padding-left: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-top: 1.5rem;
+}
+
+.tab-img {
+  max-width: 35vw;
 }
 
 
@@ -103,6 +105,14 @@
 
   .tab-list {
     gap: 1rem;
+  }
+
+  .tab-img {
+    max-width: 25vw;
+  }
+
+  .tab {
+    font-size: 1.25rem;
   }
 }
   
