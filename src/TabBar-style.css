@@ -56,7 +56,7 @@
   
 .tab[aria-selected="true"] {
     text-decoration-line: underline;
-    background-color: #ecc3cd;
+    background-color: #EDC4CF;
 }
   
 .tab:hover[aria-selected="true"] {
