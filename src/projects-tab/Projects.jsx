@@ -10,7 +10,6 @@ import '../common/CardDisplay.jsx';
 import CardDisplay from '../common/CardDisplay.jsx';
 import radials_2023 from '../assets/2023_Radials.jpeg';
 import households_2023 from '../assets/2023_HouseholdConditions.jpeg';
-import bachelor_2022 from '../assets/2022_Bachelor.jpeg';
 import access_2021 from '../assets/2021_FoodAccess.jpeg';
 import wordclouds_2020 from '../assets/2020_Wordclouds.jpeg';
 
@@ -57,8 +56,12 @@ const projectData = [
         'links': [
             {
                 'text': 'Project Site',
-                'address': 'https://ervinkellym.github.io/index.html',
+                'address': 'https://ervinkellym.github.io/RemoteLearningConditions/',
             },
+            {
+                'text': 'Code Repository',
+                'address': 'https://github.com/ervinkellym/RemoteLearningConditions',
+            }
         ],
     },
     {
@@ -68,7 +71,7 @@ const projectData = [
         'images': [
             {'src': access_2021, 'alt': 'Alt Text'},
         ],
-        'caption': 'More details here!!!',
+        'caption': 'D3, Observable, ...TODO',
         'additionalDetails': [
             {
                 'type': 'text',
@@ -77,7 +80,7 @@ const projectData = [
         ],
         'links': [
             {
-                'text': 'Project Observable Notebook',
+                'text': 'Observable Notebook',
                 'address': 'https://observablehq.com/d/a72c3d7cfd3b710e',
             },
         ],
@@ -98,6 +101,16 @@ const projectData = [
                 'expandedText': 'Expanded text',
             },
         ],
+        'links': [
+            {
+                'text': 'TODO: Host (Project Site)',
+                'address': 'https://ervinkellym.github.io/',
+            },
+            {
+                'text': 'Code Repository',
+                'address': 'https://github.com/ervinkellym/PortfolioSite',
+            },
+        ],
     },
     {
         'id': 4,
@@ -108,6 +121,16 @@ const projectData = [
         ],
         'caption': 'More details here!!!',
         'additionalDetails': [],
+        'links': [
+            {
+                'text': 'Project Site',
+                'address': 'https://ervinkellym.github.io/GroceryInflationD3/',
+            },
+            {
+                'text': 'Code Repository',
+                'address': 'https://github.com/ervinkellym/GroceryInflationD3',
+            },
+        ],
     },
     {
         'id': 5,
@@ -132,6 +155,10 @@ const projectData = [
                 'text': 'Project Article',
                 'address': 'https://icat.vt.edu/events/2020/05/icat-c-i-day-2020/social-media-storytelling-on-the-appalachian-trail.html',
             },
+            {
+                'text': 'Code Repository',
+                'address': 'https://github.com/ervinkellym/AT-Capstone',
+            }
         ],
     },
 ] 
