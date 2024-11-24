@@ -77,11 +77,13 @@
 
 .tab-wrapper {
   background-color: snow;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-tab {
   color: #B0697F !important;
-  font-size: 2rem;  /* Mobile Only */
+  font-size: 1.5rem;  /* Mobile Only */
   font-family: "Chango", serif;
   font-weight: 400;
   font-style: normal;
@@ -113,7 +115,17 @@
 }
 
 .text-block {
-  padding-top: 0.25rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  padding-left: 50rem;
+  padding-right: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.center-text {
+  text-align: center;
 }
   

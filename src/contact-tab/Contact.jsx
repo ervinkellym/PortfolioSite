@@ -1,7 +1,7 @@
 function Contact() {
     return (
         <div className="tab-wrapper">
-            <div className="text-block">
+            <div className="text-block center-text">
                 <p>The best way to reach me is via email at ervinkellym@gmail.com.</p>
                 <p>If you want to chat then please go ahead and book a time using my calendly link below!</p>
             </div>

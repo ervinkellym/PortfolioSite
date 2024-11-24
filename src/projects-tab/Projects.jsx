@@ -153,7 +153,7 @@ const projectData = [
         'id': 4,
         'year': 2022,
         'title': 'Grocery Inflation & SNAP Benefits',
-        'shortDescription': 'TODO',
+        'shortDescription': 'A data visualization piece looking at the Consumer Price Index by grocery type and the utilization of SNAP benefits.',
         'images': [
             {'src': groceryMap_2022, 'alt': 'Alt Text'},
             {'src': groceryLine_2022, 'alt': 'Alt Text'},
