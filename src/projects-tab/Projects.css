@@ -2,10 +2,15 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    gap: 1rem;
+}
+
+.image-rail-img {
+    max-width: 40%;
 }
 
 img {
-    max-width: 40vw;
+    max-width: 80vw;
 }
 
 /* Sizing for Desktop: */
@@ -13,6 +18,16 @@ img {
     img {
         max-width: 30vw;
     }
+
+    .image-rail-image {
+        width: 30%;
+        flex-grow: 1;
+    }
+}
+
+.short-description {
+   /* text-align: center; */
+   /* padding: 0 2rem 0 2rem; */
 }
 
 .link-rail {
@@ -41,11 +56,12 @@ img {
 }
 
 p {
-    align-self: center;
+    margin-top: 0.5rem;;
+    margin-bottom: 0.5rem;
 }
 
 details {
-    background: #EDC4CF;
+    background: #f8e5e9;
     padding: 10px;
     cursor: pointer;
 }

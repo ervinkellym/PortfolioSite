@@ -8,55 +8,94 @@ import * as Ariakit from '@ariakit/react';
 import './Projects.css';
 import '../common/CardDisplay.jsx';
 import CardDisplay from '../common/CardDisplay.jsx';
+import portfolio_2024 from '../assets/2024_Portfolio.jpeg';
 import radials_2023 from '../assets/2023_Radials.jpeg';
+import allergies1_2023 from '../assets/2023_Allergies1.jpeg';
+import allergies2_2023 from '../assets/2023_Allergies2.jpeg';
 import households_2023 from '../assets/2023_HouseholdConditions.jpeg';
+import households2_2023 from '../assets/2023_HouseholdConditions2.jpeg';
+import groceryMap_2022 from '../assets/2022_GroceriesMap.jpeg';
+import groceryLine_2022 from '../assets/2022_GroceriesLine.jpeg';
 import access_2021 from '../assets/2021_FoodAccess.jpeg';
 import wordclouds_2020 from '../assets/2020_Wordclouds.jpeg';
+import insta_2020 from '../assets/2020_Instagram.jpeg';
+import instaCloud_2020 from '../assets/2020_InstaWordcloud.jpeg';
 
 const projectData = [
     {
         'id': 0,
         'year': 2023,
         'title': 'Food Allergens in Human Milk',
+        'shortDescription': 'A single-page web application with information about symptoms of infant food allergies, how long after ingestion food proteins remain in human milk, and allergy outgrowth and food reintroduction',
         'images': [
+            {'src': allergies2_2023, 'alt': 'Alt Text'},
             {'src': radials_2023, 'alt': 'Alt Text'},
+            {'src': allergies1_2023, 'alt': 'Alt Text'},
         ],
-        'caption': 'More details here!!!',
-        'additionalDetails': [],
+        'caption': 'Svelte, Vite, ECharts, HTML/CSS/JS',
+        'additionalDetails': [
+            {
+                'type': 'text',
+                'text': 'This was my Data Analytics & Visualization Master\'s capstone project. Inspired by the challenges faced by parents of children with food allergies and the limited information available to those feeding their children human milk, I strove to create an informational toolbox on food protein transfer in human milk.',
+            },
+            {
+                'type': 'text',
+                'text': 'I hope you take the time to browse the linked resources below as I explain my data, design, and development process in-depth.',
+            },
+            {
+                'type': 'expand',
+                'collapsedText': 'Technologies Used...',
+                'expandedText': 'Vite, Svelte, Svelte Material UI, Node.js, Apache ECharts, HTML, CSS, JavaScript, GitHub Pages',
+            },
+        ],
         'links': [
             {
                 'text': 'Project Site',
                 'address': 'https://ervinkellym.github.io/AllergensInHumanMilk/',
             },
+            // {
+            //     'text': 'Code Repository',
+            //     'address': 'https://github.com/ervinkellym/AllergensInHumanMilk',
+            // },
             {
-                'text': 'Code Repository',
-                'address': 'https://github.com/ervinkellym/AllergensInHumanMilk',
+                'text': 'Presentation Video',
+                'address': 'https://drive.google.com/file/d/13ztRVsubHWC2HuKLFd_pAdh-FJ9fAnZR/view?usp=sharing',
             },
+            {
+                'text': 'About this Project',
+                'address': 'https://drive.google.com/file/d/1z-7jYu2cMKV_q7p1emOxPcE7_UKT1OUs/view?usp=sharing',
+            }
         ],
     },
     {
         'id': 1,
         'year': 2023,
         'title': 'Conditions Affecting Remote Learning',
+        'shortDescription': 'A "scrolly-telling" data story about household conditions that may affect remote K-12 learning such as linguistic isolation, crowded conditions, and access to a computer and broadband internet.',
         'images': [
             {'src': households_2023, 'alt': 'Alt Text'},
+            {'src': households2_2023, 'alt': 'Alt Text'},
         ],
-        'caption': 'More details here!!!',
+        'caption': 'Scrollama, D3, Python, HTML/CSS/JS',
         'additionalDetails': [
             {
                 'type': 'text',
-                'text': 'TODO: summary here',
+                'text': 'I live in an under-resourced school district in rural Appalachia. In college, I volunteered at the local Head Start center and was struck by how much of a difference early educational intervention can make for children with disadvantages who are struggling to keep up with their peers. In a “scrollytelling”/visual essay format, I wanted locate and draw attention to school districts that likely have the most students who have fallen behind and are struggling educationally.',
             },
             {
                 'type': 'expand',
-                'collapsedText': 'Project Inspiration & Goal',
-                'expandedText': 'I live in an extremely under-resourced school district in rural Appalachia. In college, I volunteered at the local Head Start center and was struck by how much of a difference early educational intervention can make for children with varying disadvantages who are struggling to keep up with their peers. I wanted to expand that line of thinking into K-12 schools and create a piece that can draw attention to those who need it most. In a “scrollytelling”/visual essay format, I wanted locate and draw attention to school districts that likely have the most students who have fallen behind and are struggling educationally.',
+                'collapsedText': 'Technologies Used...',
+                'expandedText': 'Scrollama.js, D3.js, HTML, CSS, JavaScript, Python, Jupyter & Observable Notebooks, Canva',
             },
         ],
         'links': [
             {
                 'text': 'Project Site',
                 'address': 'https://ervinkellym.github.io/RemoteLearningConditions/',
+            },
+            {
+                'text': 'About this Project',
+                'address': 'https://ervinkellym.github.io/RemoteLearningConditions/about.html',
             },
             {
                 'text': 'Code Repository',
@@ -68,14 +107,16 @@ const projectData = [
         'id': 2,
         'year': 2021,
         'title': 'Poverty & Food Access for US Children',
+        'shortDescription': 'An interactive bivariate choropleth visualization depecting poverty rates and percentages of children who are are affected by low food access with accompanying analysis.',
         'images': [
             {'src': access_2021, 'alt': 'Alt Text'},
         ],
-        'caption': 'D3, Observable, ...TODO',
+        'caption': 'Python, Jupyter & Observable (D3) Notebooks',
         'additionalDetails': [
             {
-                'type': 'text',
-                'text': 'TODO: summary here',
+                'type': 'expand',
+                'collapsedText': 'Technologies Used...',
+                'expandedText': 'Python, Jupyter Notebook, Observable (D3) Notebook',
             },
         ],
         'links': [
@@ -89,23 +130,19 @@ const projectData = [
         'id': 3,
         'year': 2024,
         'title': 'Portfolio Site',
+        'shortDescription': 'A website to showcase my work and a little bit of my personality - take a look around!',
         'images': [
-            {'src': radials_2023, 'alt': 'Alt Text'},
+            {'src': portfolio_2024, 'alt': 'Alt Text'},
         ],
-        'imgPath': radials_2023,
-        'caption': 'More details here!!!',
+        'caption': 'React, Vite, Ariakit, HTML/CSS/JS',
         'additionalDetails': [
             {
                 'type': 'expand',
-                'collapsedText': 'Collapsed text',
-                'expandedText': 'Expanded text',
+                'collapsedText': 'Technologies Used...',
+                'expandedText': 'React, Ariakit, Vite, Node.js, HTML, CSS, JavaScript, GitHub Pages',
             },
         ],
         'links': [
-            {
-                'text': 'Project Site',
-                'address': 'https://ervinkellym.github.io/PortfolioSite/',
-            },
             {
                 'text': 'Code Repository',
                 'address': 'https://github.com/ervinkellym/PortfolioSite',
@@ -115,12 +152,20 @@ const projectData = [
     {
         'id': 4,
         'year': 2022,
-        'title': 'Grocery Inflation & SNAP',
+        'title': 'Grocery Inflation & SNAP Benefits',
+        'shortDescription': 'TODO',
         'images': [
-            {'src': radials_2023, 'alt': 'Alt Text'},
+            {'src': groceryMap_2022, 'alt': 'Alt Text'},
+            {'src': groceryLine_2022, 'alt': 'Alt Text'},
         ],
-        'caption': 'More details here!!!',
-        'additionalDetails': [],
+        'caption': 'HTML/CSS/JS, Mapbox, Observable (D3), Python',
+        'additionalDetails': [
+            {
+                'type': 'expand',
+                'collapsedText': 'Technologies Used...',
+                'expandedText': 'HTML, CSS, JavaScript, Mapbox, Python, Jupyter Notebook, Observable (D3) Notebook',
+            },
+        ],
         'links': [
             {
                 'text': 'Project Site',
@@ -136,14 +181,18 @@ const projectData = [
         'id': 5,
         'year': 2020,
         'title': 'Social Media Storytelling on the AT',
+        'shortDescription': 'For my undergraduate capstone, I created a visual storytelling tool (a dynamic linked wordcloud) to aggregate conversations on social media about the Appalachian Trail and drill down to individual stories.',
         'images': [
             {'src': wordclouds_2020, 'alt': 'Alt Text'},
+            {'src': instaCloud_2020, 'alt': 'Alt Text'},
+            {'src': insta_2020, 'alt': 'Alt Text'},
         ],
-        'caption': 'More details here!!!',
+        'caption': 'HTML/CSS/JS, Python, amCharts',
         'additionalDetails': [
             {
-                'type': 'text',
-                'text': 'TODO: summary here',
+                'type': 'expand',
+                'collapsedText': 'Technologies Used...',
+                'expandedText': 'HTML, CSS, JavaScript, Python, amCharts',
             },
         ],
         'links': [
@@ -152,7 +201,7 @@ const projectData = [
                 'address': 'https://ervinkellym.github.io/AT-Capstone/Home.html',
             },
             {
-                'text': 'Project Article',
+                'text': 'Article & Presentation',
                 'address': 'https://icat.vt.edu/events/2020/05/icat-c-i-day-2020/social-media-storytelling-on-the-appalachian-trail.html',
             },
             {
@@ -192,12 +241,13 @@ function Projects() {
                 )}
             >
                 <div className="header">
-                    <Ariakit.DialogHeading className="heading">{ dialogHeader }</Ariakit.DialogHeading>
+                    <Ariakit.DialogHeading className="heading">{ dialogHeader + ', ' + selectedProject.year }</Ariakit.DialogHeading>
                     <Ariakit.DialogDismiss className="button secondary hop-up-on-hover">Close</Ariakit.DialogDismiss>
                 </div>
+                <p className="short-description">{ selectedProject.shortDescription }</p>
                 <div className="image-rail">
                     { 'images' in selectedProject && selectedProject.images.map(function(img) {
-                        return ( <img src={ img.src } alt={ img.alt }></img> );
+                        return ( <img className="image-rail-image" src={ img.src } alt={ img.alt }></img> );
                     }) }
                 </div>
                 { dialogContent.map(function(contentItem) {
