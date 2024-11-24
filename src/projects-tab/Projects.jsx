@@ -181,7 +181,7 @@ const projectData = [
         'id': 5,
         'year': 2020,
         'title': 'Social Media Storytelling on the AT',
-        'shortDescription': 'For my undergraduate capstone, I created a visual storytelling tool (a dynamic linked wordcloud) to aggregate conversations on social media about the Appalachian Trail and drill down to individual stories.',
+        'shortDescription': 'A visual storytelling tool (a dynamic linked wordcloud) to aggregate conversations on social media about the Appalachian Trail and drill down to individual stories.',
         'images': [
             {'src': wordclouds_2020, 'alt': 'Alt Text'},
             {'src': instaCloud_2020, 'alt': 'Alt Text'},
@@ -189,6 +189,10 @@ const projectData = [
         ],
         'caption': 'HTML/CSS/JS, Python, amCharts',
         'additionalDetails': [
+            {
+                'type': 'text',
+                'text': 'This was my undergraduate capstone project and a part of the Virginia Tech Center for Human Computer Interaction\'s Technology on the Trail initiative.',
+            },
             {
                 'type': 'expand',
                 'collapsedText': 'Technologies Used...',
