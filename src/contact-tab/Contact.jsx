@@ -1,11 +1,22 @@
-// Library Imports
-import * as Ariakit from '@ariakit/react';
-
 function Contact() {
     return (
         <div className="tab-wrapper">
-            <p>Hi there! I am the Contact tab 😊</p>
-        </div>
+            <div className="text-block">
+                <p>The best way to reach me is via email at ervinkellym@gmail.com.</p>
+                <p>If you want to chat then please go ahead and book a time using my calendly link below!</p>
+            </div>
+            <div>
+                <a 
+                    className="link hop-up-on-hover" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href="https://calendly.com/ervinkellym"
+                >
+                    Schedule a Meeting
+                </a>
+            </div>
+            </div>
+            
     );
   }
   

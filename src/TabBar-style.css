@@ -111,4 +111,9 @@
     font-size: 1.25rem;
   }
 }
+
+.text-block {
+  padding-top: 0.25rem;
+  padding-bottom: 2rem;
+}
   
