@@ -128,57 +128,6 @@ const projectData = [
     },
     {
         'id': 3,
-        'year': 2024,
-        'title': 'Portfolio Site',
-        'shortDescription': 'A website to showcase my work and a little bit of my personality - take a look around!',
-        'images': [
-            {'src': portfolio_2024, 'alt': 'Alt Text'},
-        ],
-        'caption': 'React, Vite, Ariakit, HTML/CSS/JS',
-        'additionalDetails': [
-            {
-                'type': 'expand',
-                'collapsedText': 'Technologies Used...',
-                'expandedText': 'React, Ariakit, Vite, Node.js, HTML, CSS, JavaScript, GitHub Pages',
-            },
-        ],
-        'links': [
-            {
-                'text': 'Code Repository',
-                'address': 'https://github.com/ervinkellym/PortfolioSite',
-            },
-        ],
-    },
-    {
-        'id': 4,
-        'year': 2022,
-        'title': 'Grocery Inflation & SNAP Benefits',
-        'shortDescription': 'A data visualization piece looking at the Consumer Price Index by grocery type and the utilization of SNAP benefits.',
-        'images': [
-            {'src': groceryMap_2022, 'alt': 'Alt Text'},
-            {'src': groceryLine_2022, 'alt': 'Alt Text'},
-        ],
-        'caption': 'HTML/CSS/JS, Mapbox, Observable (D3), Python',
-        'additionalDetails': [
-            {
-                'type': 'expand',
-                'collapsedText': 'Technologies Used...',
-                'expandedText': 'HTML, CSS, JavaScript, Mapbox, Python, Jupyter Notebook, Observable (D3) Notebook',
-            },
-        ],
-        'links': [
-            {
-                'text': 'Project Site',
-                'address': 'https://ervinkellym.github.io/GroceryInflationD3/',
-            },
-            {
-                'text': 'Code Repository',
-                'address': 'https://github.com/ervinkellym/GroceryInflationD3',
-            },
-        ],
-    },
-    {
-        'id': 5,
         'year': 2020,
         'title': 'Social Media Storytelling on the AT',
         'shortDescription': 'A visual storytelling tool (a dynamic linked wordcloud) to aggregate conversations on social media about the Appalachian Trail and drill down to individual stories.',
@@ -212,6 +161,57 @@ const projectData = [
                 'text': 'Code Repository',
                 'address': 'https://github.com/ervinkellym/AT-Capstone',
             }
+        ],
+    },
+    {
+        'id': 4,
+        'year': 2022,
+        'title': 'Grocery Inflation & SNAP Benefits',
+        'shortDescription': 'A data visualization piece looking at the Consumer Price Index by grocery type and the utilization of SNAP benefits.',
+        'images': [
+            {'src': groceryMap_2022, 'alt': 'Alt Text'},
+            {'src': groceryLine_2022, 'alt': 'Alt Text'},
+        ],
+        'caption': 'HTML/CSS/JS, Mapbox, Observable (D3), Python',
+        'additionalDetails': [
+            {
+                'type': 'expand',
+                'collapsedText': 'Technologies Used...',
+                'expandedText': 'HTML, CSS, JavaScript, Mapbox, Python, Jupyter Notebook, Observable (D3) Notebook',
+            },
+        ],
+        'links': [
+            {
+                'text': 'Project Site',
+                'address': 'https://ervinkellym.github.io/GroceryInflationD3/',
+            },
+            {
+                'text': 'Code Repository',
+                'address': 'https://github.com/ervinkellym/GroceryInflationD3',
+            },
+        ],
+    },
+    {
+        'id': 5,
+        'year': 2024,
+        'title': 'Portfolio Site',
+        'shortDescription': 'A website to showcase my work and a little bit of my personality - take a look around!',
+        'images': [
+            {'src': portfolio_2024, 'alt': 'Alt Text'},
+        ],
+        'caption': 'React, Vite, Ariakit, HTML/CSS/JS',
+        'additionalDetails': [
+            {
+                'type': 'expand',
+                'collapsedText': 'Technologies Used...',
+                'expandedText': 'React, Ariakit, Vite, Node.js, HTML, CSS, JavaScript, GitHub Pages',
+            },
+        ],
+        'links': [
+            {
+                'text': 'Code Repository',
+                'address': 'https://github.com/ervinkellym/PortfolioSite',
+            },
         ],
     },
 ] 
