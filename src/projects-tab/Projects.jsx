@@ -28,9 +28,9 @@ const projectData = [
         'title': 'Food Allergens in Human Milk',
         'shortDescription': 'A single-page web application with information about symptoms of infant food allergies, how long after ingestion food proteins remain in human milk, and allergy outgrowth and food reintroduction',
         'images': [
-            {'src': allergies2_2023, 'alt': 'Alt Text'},
-            {'src': radials_2023, 'alt': 'Alt Text'},
-            {'src': allergies1_2023, 'alt': 'Alt Text'},
+            {'src': allergies2_2023, 'alt': 'A screenshot of the \'Signs and Symptoms\' tab on the Food Allergens in Human Milk site with information on delayed allergic reactions and other causes of symptoms.'},
+            {'src': radials_2023, 'alt': 'A screenshot of the radial gaugues on the \'Allergen Timelines\' tab on the Food Allergens in Human Milk site depicting how long different allergenic food proteins take to peak in human milk and then to become undetectable.'},
+            {'src': allergies1_2023, 'alt': 'A screenshot of a bar chart titled \'Children Ages 3-18 with Food Allergies Experiencing Atopic Dermatitis Over 3 years\' on the \'Reintroduction\' tab on the Food Allergens in Human Milk site.'},
         ],
         'caption': 'Svelte, Vite, ECharts, HTML/CSS/JS',
         'additionalDetails': [
@@ -73,8 +73,8 @@ const projectData = [
         'title': 'Conditions Affecting Remote Learning',
         'shortDescription': 'A "scrolly-telling" data story about household conditions that may affect remote K-12 learning such as linguistic isolation, crowded conditions, and access to a computer and broadband internet.',
         'images': [
-            {'src': households_2023, 'alt': 'Alt Text'},
-            {'src': households2_2023, 'alt': 'Alt Text'},
+            {'src': households_2023, 'alt': 'A screenshot of the \'Conditions Affecting Remote Learning\' site showing a map of the united states with callouts for the counties most affected by Single Parent Households.'},
+            {'src': households2_2023, 'alt': 'A screenshot of the \'Conditions Affecting Remote Learning\' site showing the page title, subtitle, and dataset information and a portion of a map of the United States with shading by county indicating proportions of linguistically isolated children.'},
         ],
         'caption': 'Scrollama, D3, Python, HTML/CSS/JS',
         'additionalDetails': [
@@ -109,7 +109,7 @@ const projectData = [
         'title': 'Poverty & Food Access for US Children',
         'shortDescription': 'An interactive bivariate choropleth visualization depecting poverty rates and percentages of children who are are affected by low food access with accompanying analysis.',
         'images': [
-            {'src': access_2021, 'alt': 'Alt Text'},
+            {'src': access_2021, 'alt': 'A screenshot of the \'Poverty and Food Access for US Children\' project showing a bivariate choropleth map of the United States titled \'Poverty Rates and Rates of Low-Access Children in U.S. Counties\'.'},
         ],
         'caption': 'Python, Jupyter & Observable (D3) Notebooks',
         'additionalDetails': [
