@@ -132,9 +132,9 @@ const projectData = [
         'title': 'Social Media Storytelling on the AT',
         'shortDescription': 'A visual storytelling tool (a dynamic linked wordcloud) to aggregate conversations on social media about the Appalachian Trail and drill down to individual stories.',
         'images': [
-            {'src': wordclouds_2020, 'alt': 'Alt Text'},
-            {'src': instaCloud_2020, 'alt': 'Alt Text'},
-            {'src': insta_2020, 'alt': 'Alt Text'},
+            {'src': wordclouds_2020, 'alt': 'A screenshot of the \'Social Media Storytelling on the Appalachian Trail\' project\'s wordclouds page showing two wordclouds with keywords/hashtags on Reddit and Instagram posts about the AT from 2019.'},
+            {'src': instaCloud_2020, 'alt': 'A screenshot of the \'Social Media Storytelling on the Appalachian Trail\' project\'s wordclouds page showing the Instagram wordcloud with September 2019 data selected and a tooltip with links to the most liked and most commented on posts that used the hashtag \'atclassof2019\'.'},
+            {'src': insta_2020, 'alt': 'A screenshot of an Instagram post by user elenaalves25 on 9/11/2019 depicting them at the \'Katahdin\' sign at the end of the AT.'},
         ],
         'caption': 'HTML/CSS/JS, Python, amCharts',
         'additionalDetails': [
@@ -169,8 +169,8 @@ const projectData = [
         'title': 'Grocery Inflation & SNAP Benefits',
         'shortDescription': 'A data visualization piece looking at the Consumer Price Index by grocery type and the utilization of SNAP benefits.',
         'images': [
-            {'src': groceryMap_2022, 'alt': 'Alt Text'},
-            {'src': groceryLine_2022, 'alt': 'Alt Text'},
+            {'src': groceryMap_2022, 'alt': 'A screenshot of the \'Grocery Inflation & SNAP Benefits\' site showing a United States Map shaded by grocery inflation rates and food benefits usage by state.'},
+            {'src': groceryLine_2022, 'alt': 'A screenshot of the \'Grocery Inflation & SNAP Benefits\' site showing a line chart depicting consumer price index change over time for different categories of groceries. The eggs category is selected.'},
         ],
         'caption': 'HTML/CSS/JS, Mapbox, Observable (D3), Python',
         'additionalDetails': [
@@ -197,7 +197,7 @@ const projectData = [
         'title': 'Portfolio Site',
         'shortDescription': 'A website to showcase my work and a little bit of my personality - take a look around!',
         'images': [
-            {'src': portfolio_2024, 'alt': 'Alt Text'},
+            {'src': portfolio_2024, 'alt': 'A screenshot of the top of the projects tab of the Portfoliop site (this site).'},
         ],
         'caption': 'React, Vite, Ariakit, HTML/CSS/JS',
         'additionalDetails': [
