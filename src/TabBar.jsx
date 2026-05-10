@@ -12,24 +12,32 @@ function TabBar() {
     return (
         <div className="wrapper">
         <Ariakit.TabProvider defaultSelectedId={ defaultSelectedId }>
-            <Ariakit.TabList className="tab-list" aria-label="Navigation Tabs">
-                <Ariakit.Tab className="tab">Projects</Ariakit.Tab>
-                <Ariakit.Tab className={ "tab home-tab" } id={ defaultSelectedId }>Kelly Mills</Ariakit.Tab>
-                <Ariakit.Tab className="tab">Contact</Ariakit.Tab>
-            </Ariakit.TabList>
-            <div className="panels">
-            <Ariakit.TabPanel>
-                <Projects />
-            </Ariakit.TabPanel>
-            <Ariakit.TabPanel tabId={ defaultSelectedId }>
-                <Home />
-            </Ariakit.TabPanel>
-            <Ariakit.TabPanel>
-                <Contact />
-            </Ariakit.TabPanel>
-            </div>
+            <header>
+                <nav aria-label:"Main Navigation">
+                    <Ariakit.TabList className="tab-list">
+                        <Ariakit.Tab className="tab">Projects</Ariakit.Tab>
+                        <Ariakit.Tab className={ "tab home-tab" } id={ defaultSelectedId }>Kelly Mills</Ariakit.Tab>
+                        <Ariakit.Tab className="tab">Contact</Ariakit.Tab>
+                    </Ariakit.TabList>
+                </nav>
+            </header>
+            <main>
+                <div className="panels">
+                <Ariakit.TabPanel>
+                    <Projects />
+                </Ariakit.TabPanel>
+                <Ariakit.TabPanel tabId={ defaultSelectedId }>
+                    <Home />
+                </Ariakit.TabPanel>
+                <Ariakit.TabPanel>
+                    <Contact />
+                </Ariakit.TabPanel>
+                </div>
+            </main>
         </Ariakit.TabProvider>
-        <footer className="footer">Kelly Mills, 2024</footer>
+        <footer className="footer">
+            Kelly Mills, { new Date().getFullYear() }
+        </footer>
         </div>
     );
   }
